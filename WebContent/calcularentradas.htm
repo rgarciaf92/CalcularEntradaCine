@@ -2,15 +2,17 @@
 
 <html lang="es">
 
-	<head>
-		<base href="/CalcularEntradaCine/">
-		<meta charset="utf-8">
-		<title>Calcular Entrada Cine</title>
-		<link rel="stylesheet" type="text/css" href="css/cine.css?v=1.0">
-	</head>
+<head>
+	<base href="/CalcularEntradaCine/">
+	<meta charset="utf-8">
+	<title>Calcular Entrada Cine</title>
+	<link rel="stylesheet" type="text/css" href="css/cine.css?v=1.0">
+	<link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
 
-	<body>
-		<div id="container">
+<body>
+	<div id="container">
+		<div id="cont_entrada">
 			<h1>!Calcula tu Entrada!</h1>
 			<div id="dia_sem" class="clearfix">
 				<label id="l_dia">Dia:</label>
@@ -26,12 +28,13 @@
 			</div>
 			<div id="cont_edad" class="clearfix">
 				<label id="l_edad">Edad:</label>
-				<input type="text" id="edad" pattern="[0-9]{1,2}" size="1" value="16" onchange="calcularEntrada();">
+				<input type="text" id="edad" size="1" value="16" onchange="calcularEntrada();">
 			</div>
 			<p id="p_precio">PRECIO</p>
-			<span id="precio">2€</span>
+			<output id="precio" name="precio">2€</output>
+			
+			<script src="js/cine.js"></script>
 		</div>
-	</body>
-	
-	<script src="js/cine.js"></script>
+	</div> <!-- container -->
+</body>
 </html>

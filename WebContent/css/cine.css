@@ -4,6 +4,14 @@
 	date:	 20150618
 */
 
+
+/* 
+   RESET    
+   Resetear todos los estilos para cualquier navegador
+*/
+@import url("reset.css");
+
+
 /***************************** 
       ClearFix
 *******************************/
@@ -23,6 +31,13 @@
 /* CONTAINER */
 
 #container {
+	width: 900px;
+	min-height: 700px;
+	margin: 0 auto; /*lo centramos en la pagina */
+	padding-top: 20px;
+}
+
+#cont_entrada {
 	border: 1px solid black;
 	display: block;
 	height: 400px;
@@ -30,31 +45,28 @@
 	background-image: url("../img/cine.jpg");
 	background-repeat: no-repeat;
 	background-size: 300px 400px;
+	margin: 0 auto;
 }
 
-#container h1 {
+#cont_entrada h1 {
 	color: #68B5C7;
 	font-size: 20px;
 	font-family: arial;
 	text-align: center;
+	margin-top:10px;
 }
 
-#listaDias {
+#listaDias, #edad {
 	background-color: black;
 	color: white;
 	border:1px solid black;
-}
-
-#edad {
-	background-color: black;
-	color: white;
-	border: 1px solid black;
 }
 
 #dia_sem {
 	float: left;
 	width: 135px;
 	margin-left: 35px;
+	margin-top:10px;
 }
 
 #dia_sem #l_dia {
@@ -63,7 +75,7 @@
 
 #cont_edad {
 	float: left;
-	margin-top: 2px;
+	margin-top: 12px;
 }
 
 #cont_edad #l_edad {
@@ -81,7 +93,7 @@
 
 #precio  {
 	margin-top: 250px;
-	margin-left: 155px;
+	margin-left: -120px;
 	float: right;
 	font-size: 90px;
 	color: white;
