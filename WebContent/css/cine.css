@@ -1,0 +1,91 @@
+/*
+	version: 1.0
+	author:  Raul Garcia Fonseca
+	date:	 20150618
+*/
+
+/***************************** 
+      ClearFix
+*******************************/
+.clearfix:before, .clearfix:after {
+	content: "";
+	display: table;
+}
+
+.clearfix:after {
+	clear: both;
+}
+
+.clearfix {
+	*zoom: 1;
+}
+
+/* CONTAINER */
+
+#container {
+	border: 1px solid black;
+	display: block;
+	height: 400px;
+	width: 300px;
+	background-image: url("../img/cine.jpg");
+	background-repeat: no-repeat;
+	background-size: 300px 400px;
+}
+
+#container h1 {
+	color: #68B5C7;
+	font-size: 20px;
+	font-family: arial;
+	text-align: center;
+}
+
+#listaDias {
+	background-color: black;
+	color: white;
+	border:1px solid black;
+}
+
+#edad {
+	background-color: black;
+	color: white;
+	border: 1px solid black;
+}
+
+#dia_sem {
+	float: left;
+	width: 135px;
+	margin-left: 35px;
+}
+
+#dia_sem #l_dia {
+	font-weight: bold;
+}
+
+#cont_edad {
+	float: left;
+	margin-top: 2px;
+}
+
+#cont_edad #l_edad {
+	margin-right: 10px;
+}
+
+#p_precio {
+	margin-top: 280px;
+	margin-left: 20px;
+	font-size: 20px;
+	font-family: arial;
+	color: white;
+	float: left;
+}
+
+#precio  {
+	margin-top: 250px;
+	margin-left: 155px;
+	float: right;
+	font-size: 90px;
+	color: white;
+	position: absolute;
+	text-align: right;
+	width: 140px;
+}

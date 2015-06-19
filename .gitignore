@@ -1,0 +1,7 @@
+#ficheros genereados de forma automatica
+/build/
+
+#Configuracion Eclipse
+/.settings/
+/.classpath
+/.project

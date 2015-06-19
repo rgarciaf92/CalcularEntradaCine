@@ -1,0 +1,37 @@
+<!doctype html>
+
+<html lang="es">
+
+	<head>
+		<base href="/CalcularEntradaCine/">
+		<meta charset="utf-8">
+		<title>Calcular Entrada Cine</title>
+		<link rel="stylesheet" type="text/css" href="css/cine.css?v=1.0">
+	</head>
+
+	<body>
+		<div id="container">
+			<h1>!Calcula tu Entrada!</h1>
+			<div id="dia_sem" class="clearfix">
+				<label id="l_dia">Dia:</label>
+				<select id="listaDias" onchange="calcularEntrada();">
+					<option value="1">Lunes</option>
+					<option value="2" selected>Martes</option>
+					<option value="3">Miércoles</option>
+					<option value="4">Jueves</option>
+					<option value="5">Viernes</option>
+					<option value="6">Sábado</option>
+					<option value="7">Domingo</option>
+				</select>
+			</div>
+			<div id="cont_edad" class="clearfix">
+				<label id="l_edad">Edad:</label>
+				<input type="text" id="edad" pattern="[0-9]{1,2}" size="1" value="16" onchange="calcularEntrada();">
+			</div>
+			<p id="p_precio">PRECIO</p>
+			<span id="precio">2€</span>
+		</div>
+	</body>
+	
+	<script src="js/cine.js"></script>
+</html>
